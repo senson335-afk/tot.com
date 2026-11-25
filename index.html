@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO: الوصف والعنوان ===== -->
+  <title>توت .كوم للبرمجيات | حلول رقمية تُثمر — تصميم مواقع وتطبيقات من مكة المكرمة</title>
+  <meta name="description" content="توت .كوم للبرمجيات براند سعودي من مكة المكرمة متخصص في تصميم وتطوير المواقع الإلكترونية، بناء تطبيقات الويب، تصميم الهويات التجارية، وحلول التسويق الرقمي.">
+  <meta name="keywords" content="تصميم مواقع مكة المكرمة, برمجيات سعودية, تطبيقات ويب, هوية تجارية, تسويق رقمي, توت كوم">
+  <meta name="author" content="توت .كوم للبرمجيات — حسن عباس">
+  <meta name="theme-color" content="#07070a">
+
+  <!-- ===== Open Graph / Twitter ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:site_name" content="توت .كوم للبرمجيات">
+  <meta property="og:title" content="توت .كوم للبرمجيات | حلول رقمية تُثمر مشروعك">
+  <meta property="og:description" content="تصميم وتطوير المواقع، تطبيقات الويب، الهويات التجارية، والتسويق الرقمي — من مكة المكرمة إلى جميع مناطق المملكة.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=80">
+  <meta property="og:url" content="https://tot.com.sa/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="توت .كوم للبرمجيات | حلول رقمية تُثمر">
+  <meta name="twitter:description" content="براند سعودي من مكة المكرمة — مواقع، تطبيقات، وهوية بصرية بمعايير احترافية.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=80">
+
+  <!-- ===== الخطوط: Tajawal ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- ===== Schema.org: نشاط تجاري محلي ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://tot.com.sa/#business",
+    "name": "توت .كوم للبرمجيات",
+    "alternateName": "Tot.com for Software",
+    "description": "براند سعودي من مكة المكرمة متخصص في تصميم وتطوير المواقع الإلكترونية، بناء تطبيقات الويب، تصميم الهويات التجارية، وتقديم حلول التسويق الرقمي.",
+    "slogan": "حلول رقمية تُثمر — مواقع، تطبيقات، وهوية بصرية بمعايير احترافية",
+    "founder": {
+      "@type": "Person",
+      "name": "حسن عباس",
+      "jobTitle": "مطور برمجيات ومصمم مواقع"
+    },
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=80",
+    "url": "https://tot.com.sa/",
+    "telephone": "+966512345678",
+    "email": "hello@tot.com.sa",
+    "priceRange": "SAR",
+    "areaServed": [
+      { "@type": "City", "name": "مكة المكرمة" },
+      { "@type": "City", "name": "جدة" },
+      { "@type": "Country", "name": "المملكة العربية السعودية" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "مكة المكرمة",
+      "addressRegion": "مكة المكرمة",
+      "addressCountry": "SA"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 21.3891, "longitude": 39.8579 },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
+      "opens": "09:00",
+      "closes": "21:00"
+    }
+  }
+  </script>
+
+  <style>
+  /* =========================================================
+     توت .كوم للبرمجيات — التنسيقات الأساسية (CSS Variables)
+     ========================================================= */
+
+  /* --- متغيّرات الوضع الليلي (الافتراضي): أسود وأحمر --- */
+  :root {
+    --bg: #07070a;              /* الخلفية الأساسية — أسود عميق */
+    --bg-soft: #0d0d12;         /* أسود أخف للأقسام */
+    --surface: rgba(255, 255, 255, 0.045);
+    --surface-strong: rgba(255, 255, 255, 0.08);
+    --border: rgba(255, 255, 255, 0.10);
+    --text: #f5f5f7;            /* النص الأساسي */
+    --muted: #a3a3ae;           /* النص الثانوي */
+    --accent: #ef4444;          /* اللون الأساسي — أحمر التوت */
+    --accent-bright: #ff5a5a;   /* أحمر أفتح للتدرّجات */
+    --accent-soft: rgba(239, 68, 68, 0.14);
+    --secondary: #991b1b;       /* اللون الثانوي — أحمر غامق */
+    --glow-1: rgba(239, 68, 68, 0.30);
+    --glow-2: rgba(127, 29, 29, 0.45);
+    --wa: #25d366;              /* لون واتساب (لون المنصّة الرسمي) */
+    --shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
+    --radius: 16px;
+    --radius-sm: 12px;
+    --nav-h: 72px;
+    --transition: 0.3s ease;
+  }
+
+  /* --- متغيّرات الوضع النهاري: أبيض وأحمر --- */
+  html[data-theme="light"] {
+    --bg: #f7f7f8;
+    --bg-soft: #ffffff;
+    --surface: rgba(10, 10, 12, 0.035);
+    --surface-strong: rgba(10, 10, 12, 0.06);
+    --border: rgba(10, 10, 12, 0.11);
+    --text: #0a0a0c;
+    --muted: #55555f;
+    --accent: #dc2626;
+    --accent-bright: #ef4444;
+    --accent-soft: rgba(220, 38, 38, 0.10);
+    --secondary: #7f1d1d;
+    --glow-1: rgba(220, 38, 38, 0.18);
+    --glow-2: rgba(127, 29, 29, 0.16);
+    --shadow: 0 18px 40px rgba(10, 10, 12, 0.12);
+  }
+
+  /* --- إعادة تعيين عامة --- */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 12px); }
+
+  body {
+    font-family: 'Tajawal', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color var(--transition), color var(--transition);
+  }
+
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+  .container { width: min(1160px, 92%); margin-inline: auto; }
+
+  /* =========================================================
+     شريط التنقل الثابت (Navbar)
+     ========================================================= */
+  .navbar {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline: 0;
+    height: var(--nav-h);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background: color-mix(in srgb, var(--bg) 78%, transparent);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-block-end: 1px solid transparent;
+    transition: background var(--transition), border-color var(--transition);
+  }
+  .navbar.scrolled {
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    border-block-end-color: var(--border);
+  }
+  .navbar .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+
+  /* الشعار: أيقونة توتة + نص + أيقونة شيفرة */
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.15rem; }
+  .brand .berry {
+    width: 38px; height: 38px;
+    display: grid; place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--secondary));
+    color: #ffffff;
+    box-shadow: 0 6px 18px rgba(239, 68, 68, 0.40);
+  }
+  .brand .code-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    padding: 1px 7px;
+    border-radius: 8px;
+    direction: ltr;
+  }
+
+  /* روابط التنقل */
+  .nav-links { display: flex; align-items: center; gap: 6px; }
+  .nav-links a {
+    padding: 8px 13px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--muted);
+    transition: color var(--transition), background var(--transition);
+  }
+  .nav-links a:hover,
+  .nav-links a.active { color: var(--text); background: var(--surface-strong); }
+
+  .nav-actions { display: flex; align-items: center; gap: 8px; }
+
+  /* زر تبديل الوضع الليلي/النهاري */
+  .theme-toggle {
+    width: 42px; height: 42px;
+    display: grid; place-items: center;
+    border-radius: 12px;
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    color: var(--text);
+    transition: transform var(--transition), background var(--transition);
+  }
+  .theme-toggle:hover { transform: rotate(18deg); }
+  .theme-toggle .icon-sun { display: none; }
+  html[data-theme="light"] .theme-toggle .icon-sun { display: block; }
+  html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
+
+  /* زر واتساب صغير بالهيدر */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.98rem;
+    transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent-bright), var(--secondary));
+    color: #ffffff;
+    box-shadow: 0 10px 26px rgba(239, 68, 68, 0.32);
+  }
+  .btn-primary:hover { box-shadow: 0 14px 32px rgba(239, 68, 68, 0.45); }
+  .btn-ghost {
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .btn-ghost:hover { border-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+  .btn-wa { background: var(--wa); color: #062b14; box-shadow: 0 10px 26px rgba(37, 211, 102, 0.3); }
+  .btn-lg { padding: 15px 30px; font-size: 1.05rem; }
+
+  /* زر الهامبرغر */
+  .hamburger {
+    display: none;
+    width: 42px; height: 42px;
+    border-radius: 12px;
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    place-items: center;
+  }
+
+  /* قائمة الجوال */
+  .mobile-menu {
+    position: fixed;
+    inset-block-start: var(--nav-h);
+    inset-inline: 0;
+    z-index: 999;
+    background: var(--bg-soft);
+    border-block-end: 1px solid var(--border);
+    padding: 14px 5% 22px;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    box-shadow: var(--shadow);
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    padding: 13px 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .mobile-menu a:hover, .mobile-menu a.active { background: var(--surface-strong); color: var(--text); }
+
+  /* =========================================================
+     قسم البطل (Hero)
+     ========================================================= */
+  .hero {
+    position: relative;
+    padding-block: calc(var(--nav-h) + 70px) 60px;
+    overflow: hidden;
+    text-align: center;
+  }
+  /* خلفية متدرجة مع Glow */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset-block-start: -180px;
+    inset-inline-start: 50%;
+    transform: translateX(50%);
+    width: 900px; height: 620px;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(239, 68, 68, 0.26), transparent 55%),
+      radial-gradient(circle at 70% 60%, rgba(127, 29, 29, 0.38), transparent 55%);
+    filter: blur(10px);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero .container { position: relative; z-index: 1; }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: var(--surface);
+    border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    backdrop-filter: blur(8px);
+  }
+  /* نقطة نابضة */
+  .pulse-dot {
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+    position: relative;
+    flex-shrink: 0;
+  }
+  .pulse-dot::after {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    animation: pulse 1.8s ease-out infinite;
+  }
+  @keyframes pulse {
+    0% { transform: scale(0.6); opacity: 0.9; }
+    100% { transform: scale(1.7); opacity: 0; }
+  }
+
+  .hero-logo {
+    margin-block-start: 26px;
+    font-size: clamp(2.1rem, 6vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+  }
+  .hero-logo .dot { color: var(--accent); }
+  .hero-headline {
+    margin-block-start: 8px;
+    font-size: clamp(1.5rem, 4.4vw, 2.5rem);
+    font-weight: 800;
+    background: linear-gradient(120deg, var(--accent-bright), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero-sub {
+    margin: 18px auto 0;
+    max-width: 640px;
+    color: var(--muted);
+    font-size: clamp(1rem, 2.4vw, 1.15rem);
+  }
+  .hero-ctas {
+    margin-block-start: 32px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero-loc {
+    margin-block-start: 26px;
+    color: var(--muted);
+    font-size: 0.92rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  /* =========================================================
+     شريط الثقة (Trust Bar)
+     ========================================================= */
+  .trust-bar {
+    border-block: 1px solid var(--border);
+    background: var(--surface);
+    backdrop-filter: blur(8px);
+  }
+  .trust-bar .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding-block: 18px;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    font-size: 0.93rem;
+    font-weight: 600;
+    color: var(--muted);
+    text-align: center;
+  }
+  .trust-item svg { color: var(--accent); flex-shrink: 0; }
+
+  /* =========================================================
+     العناوين العامة للأقسام
+     ========================================================= */
+  section { padding-block: 82px; scroll-margin-top: calc(var(--nav-h) + 10px); position: relative; }
+  .section-alt { background: var(--bg-soft); }
+
+  /* =========================================================
+     الخلفية العامة: صورة توت شفافة عالية الجودة (طبقة ثابتة)
+     ========================================================= */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("https://pnggallery.com/wp-content/uploads/mulberry-01.png") no-repeat;
+    background-position: 4% 88%;
+    background-size: min(560px, 70vw);
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* =========================================================
+     الزخارف المموجة والمتداخلة
+     ========================================================= */
+
+  /* --- حلقات دائرية متداخلة (Interlocking Rings) --- */
+  .rings-deco {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .rings-deco span {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    opacity: 0.16;
+  }
+  .rings-deco span:nth-child(1) { width: 300px; height: 300px; top: -90px; inset-inline-start: -70px; }
+  .rings-deco span:nth-child(2) { width: 220px; height: 220px; top: -40px; inset-inline-start: 55px; border-color: var(--secondary); opacity: 0.22; }
+  .rings-deco span:nth-child(3) { width: 170px; height: 170px; top: 45px; inset-inline-start: -25px; }
+
+  /* --- نمط موجات متكرّر (Texture) --- */
+  .wave-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='44' viewBox='0 0 140 44'%3E%3Cpath d='M0 22 Q17.5 4 35 22 T70 22 T105 22 T140 22' fill='none' stroke='%23ef4444' stroke-width='1.6' stroke-linecap='round' opacity='0.30'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+  }
+
+  /* --- الفاصل الموجي بين الأقسام --- */
+  .wave-divider {
+    line-height: 0;
+    background: var(--bg);
+    position: relative;
+    z-index: 2;
+  }
+  .wave-divider svg { display: block; width: 100%; height: clamp(54px, 7vw, 96px); }
+  .wave-divider .w-fill { fill: var(--bg-soft); }
+  .wave-divider .w-tint { fill: var(--accent); opacity: 0.16; }
+  .wave-divider .w-line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 3;
+    stroke-linecap: round;
+    opacity: 0.6;
+  }
+  /* نسخة عكسية: من قسم فاتح (bg-soft) إلى قسم داكن (bg) */
+  .wave-divider.reverse { background: var(--bg-soft); }
+  .wave-divider.reverse .w-fill { fill: var(--bg); }
+  .wave-divider.reverse .w-tint { fill: var(--accent); opacity: 0.10; }
+  .wave-divider.reverse .w-line { opacity: 0.35; }
+
+  /* --- خط تأكيد موجي تحت العناوين --- */
+  .wavy-underline { position: relative; }
+  .wavy-underline::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 15px;
+    margin: 14px auto 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='15' viewBox='0 0 140 15'%3E%3Cpath d='M3 7.5 Q20 1 37 7.5 T71 7.5 T105 7.5 T137 7.5' fill='none' stroke='%23ef4444' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / contain;
+  }
+
+  .section-head { text-align: center; max-width: 680px; margin-inline: auto; margin-block-end: 46px; }
+  .section-kicker {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    padding: 5px 16px;
+    border-radius: 999px;
+    margin-block-end: 14px;
+  }
+  .section-title { font-size: clamp(1.6rem, 4vw, 2.3rem); font-weight: 800; line-height: 1.4; }
+  .section-desc { margin-block-start: 12px; color: var(--muted); }
+
+  /* =========================================================
+     قسم الخدمات
+     ========================================================= */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .service-card {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 24px;
+    backdrop-filter: blur(10px);
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  /* خط علوي أحمر متوهج يظهر عند المرور */
+  .service-card::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--secondary));
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform var(--transition);
+  }
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+    border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+  .service-card:hover::before { transform: scaleX(1); }
+
+  .service-icon {
+    width: 54px; height: 54px;
+    border-radius: 15px;
+    display: grid; place-items: center;
+    background: var(--accent-soft);
+    color: var(--accent);
+    margin-block-end: 16px;
+    transition: transform var(--transition), background var(--transition);
+  }
+  .service-card:hover .service-icon { transform: scale(1.08) rotate(-6deg); background: color-mix(in srgb, var(--accent) 24%, transparent); }
+
+  .service-card h3 { font-size: 1.16rem; font-weight: 700; margin-block-end: 8px; }
+  .service-card p { color: var(--muted); font-size: 0.95rem; margin-block-end: 14px; }
+
+  .service-points { display: flex; flex-direction: column; gap: 7px; margin-block-end: 20px; }
+  .service-points li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .service-points li svg { color: var(--accent); flex-shrink: 0; margin-block-start: 5px; }
+
+  .service-card .btn { margin-block-start: auto; width: 100%; }
+
+  /* =========================================================
+     قسم لماذا توت .كوم
+     ========================================================= */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .why-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 22px;
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  /* تداخل البطاقات: رفع كل بطاقة متبادلة قليلاً */
+  .why-card:nth-child(even) { transform: translateY(18px); }
+  .why-card:nth-child(even):hover { transform: translateY(12px); }
+  /* لمسة حمراء متداخلة خفيفة */
+  .why-card::after {
+    content: "";
+    position: absolute;
+    inset-block-end: -40px;
+    inset-inline-start: -40px;
+    width: 110px; height: 110px;
+    background: radial-gradient(circle, rgba(239, 68, 68, 0.18), transparent 70%);
+    pointer-events: none;
+  }
+  .why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+    border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+  .why-emoji {
+    font-size: 2rem;
+    display: inline-grid;
+    place-items: center;
+    width: 64px; height: 64px;
+    border-radius: 18px;
+    background: var(--accent-soft);
+    margin-block-end: 14px;
+  }
+  .why-card h3 { font-size: 1.05rem; font-weight: 700; margin-block-end: 8px; }
+  .why-card p { font-size: 0.9rem; color: var(--muted); }
+
+  /* =========================================================
+     قسم أعمالنا (Portfolio)
+     ========================================================= */
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-block-end: 34px;
+  }
+  .filter-btn {
+    padding: 9px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.93rem;
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    transition: all var(--transition);
+  }
+  .filter-btn:hover { color: var(--text); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+  .filter-btn.active {
+    background: linear-gradient(135deg, var(--accent-bright), var(--secondary));
+    color: #ffffff;
+    border-color: transparent;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    position: relative;
+    z-index: 1;
+  }
+  .project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card:hover { transform: translateY(-7px); box-shadow: var(--shadow); }
+  .project-card.hidden { display: none; }
+  .project-thumb {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--surface-strong);
+  }
+  .project-thumb img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .project-card:hover .project-thumb img { transform: scale(1.06); }
+  .project-body { padding: 20px 20px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .project-cat {
+    align-self: flex-start;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 3px 12px;
+    border-radius: 999px;
+  }
+  .project-body h3 { font-size: 1.1rem; font-weight: 700; }
+  .tech-list { display: flex; flex-wrap: wrap; gap: 7px; }
+  .tech-list span {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: 8px;
+    direction: ltr;
+    display: inline-block;
+  }
+  .project-link {
+    margin-block-start: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--accent);
+    transition: gap var(--transition);
+  }
+  .project-link:hover { gap: 11px; }
+
+  /* =========================================================
+     قسم من نحن (About)
+     ========================================================= */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 44px;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+  }
+  .about-story h2 { font-size: clamp(1.5rem, 3.6vw, 2.15rem); font-weight: 800; line-height: 1.45; }
+  .about-story .lead { margin-block-start: 18px; color: var(--muted); font-size: 1.03rem; }
+  .about-block { margin-block-start: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; }
+  .about-block h3 { font-size: 1.02rem; font-weight: 700; color: var(--accent); margin-block-end: 6px; display: flex; align-items: center; gap: 8px; }
+  .about-block p { font-size: 0.95rem; color: var(--muted); }
+
+  .founder-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .founder-card::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0; inset-inline: 0;
+    height: 90px;
+    background: linear-gradient(135deg, rgba(239,68,68,.45), rgba(127,29,29,.35));
+  }
+  .founder-photo {
+    position: relative;
+    width: 128px; height: 128px;
+    margin-inline: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--accent);
+    box-shadow: 0 12px 30px rgba(239, 68, 68, 0.35);
+    background: var(--surface-strong);
+  }
+  .founder-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .founder-card h3 { position: relative; margin-block-start: 16px; font-size: 1.25rem; font-weight: 800; }
+  .founder-role { color: var(--accent); font-weight: 600; font-size: 0.95rem; margin-block-start: 3px; }
+  .founder-bio { color: var(--muted); font-size: 0.93rem; margin-block-start: 14px; }
+  .skills { display: flex; flex-wrap: wrap; gap: 9px; justify-content: center; margin-block-start: 20px; }
+  .skill-pill {
+    font-size: 0.83rem;
+    font-weight: 700;
+    padding: 6px 15px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent);
+    color: var(--text);
+    direction: ltr;
+  }
+  .service-area-note {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    background: linear-gradient(120deg, rgba(239,68,68,.12), rgba(127,29,29,.16));
+    border: 1px dashed color-mix(in srgb, var(--accent) 55%, transparent);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    font-weight: 600;
+    font-size: 0.98rem;
+  }
+  .service-area-note svg { color: var(--accent); flex-shrink: 0; }
+
+  /* =========================================================
+     قسم آراء العملاء
+     ========================================================= */
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .testimonial-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+  .testimonial-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+  .stars { color: #fbbf24; letter-spacing: 2px; font-size: 0.95rem; }
+  .testimonial-card p { color: var(--muted); font-size: 0.96rem; flex: 1; }
+  .tester { display: flex; align-items: center; gap: 12px; }
+  .tester-avatar {
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    font-weight: 800;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--accent-bright), var(--secondary));
+    flex-shrink: 0;
+  }
+  .tester-info strong { display: block; font-size: 0.97rem; }
+  .tester-info span { font-size: 0.83rem; color: var(--muted); }
+
+  /* =========================================================
+     قسم التواصل (CTA)
+     ========================================================= */
+  .cta-section { position: relative; overflow: hidden; }
+  .cta-box {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(140deg, rgba(239,68,68,.16), rgba(127,29,29,.14)), var(--surface);
+    border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    border-radius: 24px;
+    padding: clamp(34px, 6vw, 58px) clamp(20px, 5vw, 50px);
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+  }
+  .cta-box > * { position: relative; z-index: 1; }
+  .cta-box h2 { font-size: clamp(1.6rem, 4.4vw, 2.5rem); font-weight: 800; }
+  .cta-box > p { max-width: 620px; margin: 14px auto 0; color: var(--muted); }
+  .cta-actions { margin-block-start: 28px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .cta-socials { margin-block-start: 30px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .social-btn {
+    width: 48px; height: 48px;
+    display: grid; place-items: center;
+    border-radius: 14px;
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    transition: all var(--transition);
+  }
+  .social-btn:hover { transform: translateY(-4px); color: var(--accent); border-color: color-mix(in srgb, var(--accent) 50%, transparent); }
+  .cta-location { margin-block-start: 26px; color: var(--muted); font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; }
+  .cta-location svg { color: var(--accent); }
+
+  /* =========================================================
+     الفوتر
+     ========================================================= */
+  .footer {
+    background: var(--bg-soft);
+    border-block-start: 1px solid var(--border);
+    padding-block: 40px 30px;
+    text-align: center;
+  }
+  .footer .brand { justify-content: center; margin-block-end: 12px; }
+  .footer-copy { color: var(--muted); font-size: 0.92rem; }
+  .footer-loc { color: var(--muted); font-size: 0.88rem; margin-block-start: 6px; display: inline-flex; align-items: center; gap: 7px; }
+  .back-top {
+    margin-block-start: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--accent);
+    padding: 9px 20px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent);
+    transition: transform var(--transition);
+  }
+  .back-top:hover { transform: translateY(-4px); }
+  .footer-legal { margin-block-start: 22px; font-size: 0.8rem; color: var(--muted); opacity: .75; direction: ltr; }
+
+  /* =========================================================
+     زر واتساب العائم
+     ========================================================= */
+  .fab-wa {
+    position: fixed;
+    inset-block-end: 22px;
+    inset-inline-start: 22px;   /* الزاوية اليمنى في RTL */
+    z-index: 900;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    background: var(--wa);
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 14px 32px rgba(37, 211, 102, 0.45);
+    transition: transform var(--transition), box-shadow var(--transition);
+    animation: float 3s ease-in-out infinite;
+  }
+  .fab-wa:hover { transform: scale(1.09); box-shadow: 0 18px 40px rgba(37, 211, 102, 0.6); }
+  @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+
+  /* =========================================================
+     رسالة نسخ الرقم
+     ========================================================= */
+  .toast {
+    position: fixed;
+    inset-block-end: 96px;
+    inset-inline-start: 22px;
+    z-index: 950;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 11px 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .toast.show { opacity: 1; transform: translateY(0); }
+
+  /* =========================================================
+     حركة الظهور التدريجي عند التمرير (Reveal on Scroll)
+     ========================================================= */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* =========================================================
+     دعم تفضيل تقليل الحركة
+     ========================================================= */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+  }
+
+  /* =========================================================
+     التجاوب مع الشاشات (Mobile First)
+     ========================================================= */
+  @media (max-width: 1024px) {
+    .services-grid, .portfolio-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 860px) {
+    .nav-links, .nav-actions .btn-wa { display: none; }
+    .hamburger { display: grid; }
+    .trust-bar .container { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  }
+
+  @media (max-width: 640px) {
+    section { padding-block: 60px; }
+    .services-grid, .portfolio-grid, .testimonials-grid, .why-grid { grid-template-columns: 1fr; }
+    .hero { padding-block: calc(var(--nav-h) + 46px) 44px; }
+    .hero-ctas .btn { width: 100%; }
+    .cta-actions .btn { width: 100%; }
+    .fab-wa { width: 54px; height: 54px; inset-block-end: 16px; inset-inline-start: 16px; }
+    .toast { inset-inline-start: 16px; inset-inline-end: 16px; text-align: center; }
+  }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       شريط التنقل الثابت
+       ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <!-- الشعار -->
+      <a href="#home" class="brand" aria-label="توت .كوم للبرمجيات — الصفحة الرئيسية">
+        <span class="berry" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="14" r="3.2"/><circle cx="16" cy="14" r="3.2"/><circle cx="12" cy="18.5" r="3"/><path d="M12 11V7"/><path d="M12 7c0-2 1.5-3.5 3.5-4"/></svg>
+        </span>
+        <span>توت <span class="dot" style="color:var(--accent)">.</span>كوم</span>
+        <span class="code-tag">&lt;/&gt;</span>
+      </a>
+
+      <!-- روابط التنقل -->
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <a href="#home" class="active">الرئيسية</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#portfolio">أعمالنا</a>
+        <a href="#about">عن توت .كوم</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- زر تبديل الوضع الليلي/النهاري -->
+        <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع الليلي والنهاري" title="تبديل الوضع">
+          <svg class="icon-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+
+        <!-- زر واتساب بالهيدر -->
+        <a class="btn btn-wa" data-wa="استشارة" href="#" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          اطلب عرض سعر
+        </a>
+
+        <!-- زر القائمة للجوال -->
+        <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- قائمة الجوال -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="قائمة الجوال">
+    <a href="#home">الرئيسية</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#portfolio">أعمالنا</a>
+    <a href="#about">عن توت .كوم</a>
+    <a href="#contact">تواصل معنا</a>
+    <a href="#" data-wa="استشارة" target="_blank" rel="noopener" style="color:var(--wa); font-weight:700;">💬 استشارة مجانية عبر واتساب</a>
+  </nav>
+
+  <main>
+
+    <!-- =========================================================
+         قسم البطل (Hero)
+         ========================================================= -->
+    <section class="hero" id="home">
+      <!-- حلقات متداخلة زخرفية -->
+      <div class="rings-deco" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="container">
+        <!-- بارة الحالة -->
+        <span class="status-badge">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          نستقبل مشاريع جديدة — مكة المكرمة 🇸🇦
+        </span>
+
+        <!-- الشعار الكبير -->
+        <h1 class="hero-logo">توت <span class="dot">.</span>كوم للبرمجيات</h1>
+
+        <!-- العنوان التسويقي -->
+        <p class="hero-headline">حلول رقمية تُثمر مشروعك</p>
+
+        <!-- النص الفرعي -->
+        <p class="hero-sub">
+          من مكة المكرمة إلى العالم — نصمّم ونطوّر مواقع وتطبيقات وهويات بصرية بمعايير احترافية
+        </p>
+
+        <!-- الأزرار -->
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-primary btn-lg" data-wa="استشارة مجانية" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            اطلب استشارة مجانية
+          </a>
+          <a href="#services" class="btn btn-ghost btn-lg">
+            تصفح خدماتنا
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </a>
+        </div>
+
+        <p class="hero-loc">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          مكة المكرمة، المملكة العربية السعودية — نخدم جميع مناطق المملكة عن بُعد
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         شريط الثقة
+         ========================================================= -->
+    <div class="trust-bar">
+      <div class="container">
+        <div class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+          تسليم في الموعد
+        </div>
+        <div class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a1 1 0 0 1-1-1v-4a9 9 0 0 1 9-9"/><path d="M21 11h-3a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1a1 1 0 0 0 1-1v-4a9 9 0 0 0-9-9"/></svg>
+          دعم بعد التسليم
+        </div>
+        <div class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="12" x="2" y="6" rx="1"/><rect width="7" height="12" x="15" y="6" rx="1"/><path d="M12 6v12"/></svg>
+          تصميم متجاوب 100%
+        </div>
+        <div class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z"/></svg>
+          كود نظيف وآمن
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         قسم الخدمات
+         ========================================================= -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">خدماتنا</span>
+          <h2 class="section-title wavy-underline">حلول رقمية متكاملة تُثمر أعمالك</h2>
+          <p class="section-desc">من الفكرة إلى الإطلاق — نغطّي احتياجك الرقمي كاملاً بخبرة محلية ومعايير احترافية.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- الخدمة 1 -->
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <h3>تصميم وتطوير المواقع الإلكترونية</h3>
+            <p>مواقع تعريفية، متاجر إلكترونية، وصفحات هبوط متجاوبة وسريعة.</p>
+            <ul class="service-points">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> تصميم متجاوب لجميع الشاشات</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> سرعة تحميل وتحسين SEO أساسي</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> لوحة تحكم سهلة لإدارة المحتوى</li>
+            </ul>
+            <a href="#" class="btn btn-ghost" data-wa="تصميم وتطوير المواقع الإلكترونية" target="_blank" rel="noopener">اطلب هذه الخدمة</a>
+          </article>
+
+          <!-- الخدمة 2 -->
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </div>
+            <h3>إنشاء تطبيقات الويب</h3>
+            <p>تطبيقات عملية بواجهات حديثة وأداء عالٍ تخدم أهداف منشأتك.</p>
+            <ul class="service-points">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> أنظمة حجز وطلبات ولوحات تحكم</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> قواعد بيانات آمنة ومنظمة</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> تكامل مع بوابات الدفع والخدمات</li>
+            </ul>
+            <a href="#" class="btn btn-ghost" data-wa="إنشاء تطبيقات الويب" target="_blank" rel="noopener">اطلب هذه الخدمة</a>
+          </article>
+
+          <!-- الخدمة 3 -->
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+            </div>
+            <h3>تحسين وتطوير المواقع القديمة</h3>
+            <p>إعادة تصميم المواقع القديمة وتحويلها لتجربة عصرية بأداء أفضل.</p>
+            <ul class="service-points">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> تحسين السرعة والأداء</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> تحديث التصميم ليتوافق مع الجوال</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> نقل المحتوى دون فقدان البيانات</li>
+            </ul>
+            <a href="#" class="btn btn-ghost" data-wa="تحسين وتطوير المواقع القديمة" target="_blank" rel="noopener">اطلب هذه الخدمة</a>
+          </article>
+
+          <!-- الخدمة 4 -->
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+            </div>
+            <h3>تصميم الهويات التجارية والبراندات</h3>
+            <p>شعارات، ألوان، خطوط، ودليل هوية متكامل يميّز علامتك في السوق.</p>
+            <ul class="service-points">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> تصميم شعار احترافي بفكرة واضحة</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> نظام ألوان وخطوط متكامل</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> دليل استخدام الهوية Brand Guide</li>
+            </ul>
+            <a href="#" class="btn btn-ghost" data-wa="تصميم الهويات التجارية والبراندات" target="_blank" rel="noopener">اطلب هذه الخدمة</a>
+          </article>
+
+          <!-- الخدمة 5 -->
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+            </div>
+            <h3>خدمات التسويق الرقمي</h3>
+            <p>إعداد صفحات احترافية، محتوى، وتحسين الظهور (SEO أساسي).</p>
+            <ul class="service-points">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> إعداد صفحات التواصل والإعلانات</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> محتوى يخدم جمهورك ويبيع</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> تحسين الظهور في محركات البحث</li>
+            </ul>
+            <a href="#" class="btn btn-ghost" data-wa="خدمات التسويق الرقمي" target="_blank" rel="noopener">اطلب هذه الخدمة</a>
+          </article>
+
+          <!-- الخدمة 6 -->
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0-9.36-6.36L2 22l6.36-2.64A9.96 9.96 0 0 0 12 22Z"/><path d="M9 12h.01M12 12h.01M15 12h.01"/></svg>
+            </div>
+            <h3>الاستشارات التقنية</h3>
+            <p>مساعدة العملاء في اختيار الحل التقني المناسب لمشروعهم.</p>
+            <ul class="service-points">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> تقييم الفكرة وخطة التنفيذ</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> اختيار المنصة والتقنيات الأنسب</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> تقدير الميزانية والجدول الزمني</li>
+            </ul>
+            <a href="#" class="btn btn-ghost" data-wa="الاستشارات التقنية" target="_blank" rel="noopener">اطلب هذه الخدمة</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- فاصل موجي: خدمات ← لماذا توت .كوم -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 96" preserveAspectRatio="none">
+        <path class="w-fill" d="M0,48 C240,96 480,0 720,40 C960,80 1200,16 1440,52 L1440,96 L0,96 Z"/>
+        <path class="w-tint" d="M0,64 C260,24 520,88 780,56 C1040,24 1240,80 1440,44 L1440,96 L0,96 Z"/>
+        <path class="w-line" d="M0,44 C240,92 480,-4 720,36 C960,76 1200,12 1440,48"/>
+      </svg>
+    </div>
+
+    <!-- =========================================================
+         قسم لماذا توت .كوم
+         ========================================================= -->
+    <section id="why" class="section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">لماذا توت .كوم؟</span>
+          <h2 class="section-title wavy-underline">شريكك الرقمي الذي يفهم السوق السعودي</h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-emoji">🇸🇦</div>
+            <h3>براند سعودي من مكة المكرمة</h3>
+            <p>نَفهم السوق المحلي وثقافة عملاءك في المملكة.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-emoji">⏱️</div>
+            <h3>تسليم في الوقت المتفق عليه</h3>
+            <p>التزام بالمواعيد مع تحديثات مستمرة طوال مراحل العمل.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-emoji">📱</div>
+            <h3>تصميم متجاوب أولاً للجوال</h3>
+            <p>تجربة مثالية على الجوال قبل الشاشات الكبيرة.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-emoji">🛠️</div>
+            <h3>دعم فني بعد التسليم</h3>
+            <p>دعم مجاني لمدة 30 يوماً بعد تسليم المشروع.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- فاصل موجي عكسي: لماذا توت .كوم ← أعمالنا -->
+    <div class="wave-divider reverse" aria-hidden="true">
+      <svg viewBox="0 0 1440 96" preserveAspectRatio="none">
+        <path class="w-fill" d="M0,48 C240,96 480,0 720,40 C960,80 1200,16 1440,52 L1440,96 L0,96 Z"/>
+        <path class="w-tint" d="M0,64 C260,24 520,88 780,56 C1040,24 1240,80 1440,44 L1440,96 L0,96 Z"/>
+        <path class="w-line" d="M0,44 C240,92 480,-4 720,36 C960,76 1200,12 1440,48"/>
+      </svg>
+    </div>
+
+    <!-- =========================================================
+         قسم أعمالنا (Portfolio)
+         ========================================================= -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">أعمالنا</span>
+          <h2 class="section-title wavy-underline">مشاريع نفخر بنتائجها</h2>
+          <p class="section-desc">نماذج من أعمالنا في المواقع والتطبيقات والهويات التجارية.</p>
+        </div>
+
+        <!-- أزرار الفلترة -->
+        <div class="filters reveal" role="group" aria-label="فلترة المشاريع">
+          <button class="filter-btn active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="sites">مواقع</button>
+          <button class="filter-btn" data-filter="apps">تطبيقات</button>
+          <button class="filter-btn" data-filter="brands">هويات</button>
+        </div>
+
+        <div class="portfolio-grid">
+
+          <article class="project-card reveal" data-category="sites">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&auto=format&fit=crop" alt="لوحة تحليلات لمتجر إلكتروني" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-cat">موقع إلكتروني</span>
+              <h3>متجر إلكتروني لعلامة محلية</h3>
+              <div class="tech-list"><span>WordPress</span><span>WooCommerce</span><span>SEO</span></div>
+              <a href="#" class="project-link" data-wa="الاستفسار عن مشروع متجر إلكتروني لعلامة محلية" target="_blank" rel="noopener">
+                عرض المشروع
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="apps">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&auto=format&fit=crop" alt="تطبيق ويب لإدارة الطلبات" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-cat">تطبيق ويب</span>
+              <h3>نظام إدارة طلبات ومخزون</h3>
+              <div class="tech-list"><span>React</span><span>JavaScript</span><span>API</span></div>
+              <a href="#" class="project-link" data-wa="الاستفسار عن مشروع نظام إدارة طلبات ومخزون" target="_blank" rel="noopener">
+                عرض المشروع
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="brands">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80&auto=format&fit=crop" alt="تصميم هوية تجارية" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-cat">هوية تجارية</span>
+              <h3>هوية بصرية لمقهى مكة</h3>
+              <div class="tech-list"><span>Figma</span><span>Branding</span><span>UI/UX</span></div>
+              <a href="#" class="project-link" data-wa="الاستفسار عن مشروع هوية بصرية لمقهى مكة" target="_blank" rel="noopener">
+                عرض المشروع
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="sites">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80&auto=format&fit=crop" alt="موقع شركة خدمات" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-cat">موقع تعريفي</span>
+              <h3>موقع شركة خدمات لوجستية</h3>
+              <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a href="#" class="project-link" data-wa="الاستفسار عن مشروع موقع شركة خدمات لوجستية" target="_blank" rel="noopener">
+                عرض المشروع
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="apps">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80&auto=format&fit=crop" alt="تطبيق حجز مواعيد" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-cat">تطبيق ويب</span>
+              <h3>منصة حجز مواعيد إلكترونية</h3>
+              <div class="tech-list"><span>React</span><span>Node.js</span><span>UI/UX</span></div>
+              <a href="#" class="project-link" data-wa="الاستفسار عن مشروع منصة حجز مواعيد إلكترونية" target="_blank" rel="noopener">
+                عرض المشروع
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="brands">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&q=80&auto=format&fit=crop" alt="شعار وهوية تجارية" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-cat">هوية تجارية</span>
+              <h3>شعار وهوية لشركة ناشئة</h3>
+              <div class="tech-list"><span>Figma</span><span>Logo</span><span>Brand Guide</span></div>
+              <a href="#" class="project-link" data-wa="الاستفسار عن مشروع شعار وهوية لشركة ناشئة" target="_blank" rel="noopener">
+                عرض المشروع
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- فاصل موجي: أعمالنا ← من نحن -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 96" preserveAspectRatio="none">
+        <path class="w-fill" d="M0,52 C240,4 480,96 720,56 C960,16 1200,84 1440,44 L1440,96 L0,96 Z"/>
+        <path class="w-tint" d="M0,68 C260,28 520,92 780,60 C1040,28 1240,84 1440,48 L1440,96 L0,96 Z"/>
+        <path class="w-line" d="M0,48 C240,0 480,92 720,52 C960,12 1200,80 1440,40"/>
+      </svg>
+    </div>
+
+    <!-- =========================================================
+         قسم من نحن (About)
+         ========================================================= -->
+    <section id="about" class="section-alt">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-story reveal">
+            <span class="section-kicker">من نحن</span>
+            <h2 class="wavy-underline">من مكة المكرمة… نبدأ رحلة النمو الرقمي</h2>
+            <p class="lead">
+              توت .كوم للبرمجيات براند سعودي من مكة المكرمة، متخصص في تصميم وتطوير المواقع الإلكترونية،
+              بناء تطبيقات الويب، تصميم الهويات التجارية، وتقديم حلول تسويق رقمي تُساعد الأفراد والشركات
+              على النمو في العالم الرقمي.
+            </p>
+
+            <div class="about-block">
+              <h3>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
+                رسالتنا
+              </h3>
+              <p>أن نوفر حلولاً رقمية اقتصادية وعالية الجودة تمكّن كل مشروع سعودي من حضور لائق ومؤثر في العالم الرقمي.</p>
+            </div>
+
+            <div class="about-block">
+              <h3>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                رؤيتنا
+              </h3>
+              <p>أن نكون الخيار الأول للعملاء الباحثين عن شريك تقني سعودي موثوق في مكة المكرمة والمملكة بأكملها.</p>
+            </div>
+          </div>
+
+          <!-- بطاقة المؤسس -->
+          <aside class="founder-card reveal">
+            <div class="founder-photo">
+              <img src="founder.jpg" alt="حسن عباس — مؤسس توت .كوم للبرمجيات" loading="lazy">
+            </div>
+            <h3>حسن عباس</h3>
+            <p class="founder-role">مؤسس توت .كوم — مطور برمجيات ومصمم مواقع</p>
+            <p class="founder-bio">
+              مطور برمجيات ومصمم مواقع بخبرة سنتين، شغوف ببناء منتجات رقمية نظيفة وسريعة تخدم عملاءه
+              في مكة المكرمة وجميع مناطق المملكة.
+            </p>
+            <div class="skills" aria-label="المهارات">
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">WordPress</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">UI/UX</span>
+              <span class="skill-pill">SEO</span>
+            </div>
+          </aside>
+
+          <div class="service-area-note reveal">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            نخدم عملاءنا من مكة المكرمة وجدة وجميع مناطق المملكة عن بُعد — مع إمكانية اللقاء في مكة عند الحاجة.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- فاصل موجي عكسي: من نحن ← آراء العملاء -->
+    <div class="wave-divider reverse" aria-hidden="true">
+      <svg viewBox="0 0 1440 96" preserveAspectRatio="none">
+        <path class="w-fill" d="M0,48 C240,96 480,0 720,40 C960,80 1200,16 1440,52 L1440,96 L0,96 Z"/>
+        <path class="w-tint" d="M0,64 C260,24 520,88 780,56 C1040,24 1240,80 1440,44 L1440,96 L0,96 Z"/>
+        <path class="w-line" d="M0,44 C240,92 480,-4 720,36 C960,76 1200,12 1440,48"/>
+      </svg>
+    </div>
+
+    <!-- =========================================================
+         قسم آراء العملاء
+         ========================================================= -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">آراء العملاء</span>
+          <h2 class="section-title wavy-underline">قالوا عنّا</h2>
+          <p class="section-desc">شهادات تجريبية لعملاء راضين عن جودة العمل والالتزام بالمواعيد.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="تقييم 5 من 5">★★★★★</div>
+            <p>"تجربة ممتازة من أول التواصل. الموقع سُلّم في الموعد وبجودة تفوق التوقعات، والدعم بعد التسليم كان سريعاً جداً."</p>
+            <div class="tester">
+              <span class="tester-avatar">أ</span>
+              <div class="tester-info">
+                <strong>أحمد الحربي</strong>
+                <span>صاحب متجر إلكتروني — جدة</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="تقييم 5 من 5">★★★★★</div>
+            <p>"الهوية التجارية التي صمّموها لمشروعنا أعطتنا حضوراً مختلفاً تماماً. فهموا فكرتنا بسرعة وترجموها إلى تصميم أنيق."</p>
+            <div class="tester">
+              <span class="tester-avatar">ن</span>
+              <div class="tester-info">
+                <strong>نورة القحطاني</strong>
+                <span>مؤسسة مشروع تجاري — مكة المكرمة</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="stars" aria-label="تقييم 5 من 5">★★★★★</div>
+            <p>"تعاملنا عن بُعد من الرياض وكانت الخدمة احترافية. تطبيق الويب يعمل بسلاسة والفريق ملتزم بالتحديثات المستمرة."</p>
+            <div class="tester">
+              <span class="tester-avatar">م</span>
+              <div class="tester-info">
+                <strong>محمد العتيبي</strong>
+                <span>مدير تشغيل — الرياض</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- فاصل موجي: آراء العملاء ← تواصل معنا -->
+    <div class="wave-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 96" preserveAspectRatio="none">
+        <path class="w-fill" d="M0,52 C240,4 480,96 720,56 C960,16 1200,84 1440,44 L1440,96 L0,96 Z"/>
+        <path class="w-tint" d="M0,68 C260,28 520,92 780,60 C1040,28 1240,84 1440,48 L1440,96 L0,96 Z"/>
+        <path class="w-line" d="M0,48 C240,0 480,92 720,52 C960,12 1200,80 1440,40"/>
+      </svg>
+    </div>
+
+    <!-- =========================================================
+         قسم التواصل (CTA)
+         ========================================================= -->
+    <section id="contact" class="cta-section section-alt">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2 class="wavy-underline">مشروعك القادم يبدأ بمكالمة</h2>
+          <p>
+            تواصل مع فريق توت .كوم اليوم — الاستشارة الأولى مجانية.
+            نخدم عملاءنا من مكة المكرمة وكافة مناطق المملكة عن بُعد.
+          </p>
+
+          <div class="cta-actions">
+            <a href="#" class="btn btn-wa btn-lg" data-wa="تواصل عام" target="_blank" rel="noopener">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              تواصل عبر واتساب
+            </a>
+            <button class="btn btn-ghost btn-lg" id="copyPhone">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg>
+              نسخ رقم الجوال: <span dir="ltr">+966 51 234 5678</span>
+            </button>
+          </div>
+
+          <!-- أيقونات التواصل -->
+          <div class="cta-socials">
+            <a href="#" class="social-btn" data-wa="تواصل عام" target="_blank" rel="noopener" aria-label="واتساب" title="واتساب">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </a>
+            <a href="https://instagram.com/" class="social-btn" target="_blank" rel="noopener" aria-label="إنستغرام" title="إنستغرام">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="https://linkedin.com/" class="social-btn" target="_blank" rel="noopener" aria-label="لينكدإن" title="لينكدإن">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:hello@tot.com.sa" class="social-btn" aria-label="البريد الإلكتروني" title="البريد الإلكتروني">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+
+          <p class="cta-location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            📍 مكة المكرمة، المملكة العربية السعودية
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       الفوتر
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#home" class="brand" aria-label="توت .كوم للبرمجيات">
+        <span class="berry" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="14" r="3.2"/><circle cx="16" cy="14" r="3.2"/><circle cx="12" cy="18.5" r="3"/><path d="M12 11V7"/><path d="M12 7c0-2 1.5-3.5 3.5-4"/></svg>
+        </span>
+        <span>توت <span style="color:var(--accent)">.</span>كوم للبرمجيات</span>
+      </a>
+
+      <p class="footer-copy">توت .كوم للبرمجيات — مكة المكرمة، المملكة العربية السعودية © 2025</p>
+      <p class="footer-loc">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        مكة المكرمة — المملكة العربية السعودية
+      </p>
+
+      <a href="#home" class="back-top">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+        العودة للأعلى
+      </a>
+
+      <p class="footer-legal">Tot.com for Software — Makkah, KSA</p>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       زر واتساب العائم الثابت
+       ========================================================= -->
+  <a href="#" class="fab-wa" data-wa="تواصل عام" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب" title="واتساب">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+
+  <!-- رسالة نسخ الرقم -->
+  <div class="toast" id="toast" role="status" aria-live="polite">تم نسخ رقم الجوال ✓</div>
+
+  <!-- =========================================================
+       السكربتات: الوضع الليلي/النهاري، القائمة، الفلترة، الظهور
+       ========================================================= -->
+  <script>
+  /* ---------------------------------------------------------
+     الإعدادات العامة — غيّر الرقم هنا لربط واتساب بحسابك
+     --------------------------------------------------------- */
+  const WHATSAPP_NUMBER = '966512345678'; // +966 51 234 5678 (رقم تجريبي)
+  const PHONE_DISPLAY   = '+966 51 234 5678';
+
+  /* ---------------------------------------------------------
+     1) توليد روابط واتساب برسالة جاهزة لكل خدمة/زر
+     --------------------------------------------------------- */
+  document.querySelectorAll('[data-wa]').forEach(el => {
+    const subject = el.getAttribute('data-wa');
+    let msg;
+    if (subject === 'استشارة' || subject === 'استشارة مجانية' || subject === 'تواصل عام') {
+      msg = 'مرحباً توت .كوم، أرغب في الاستفسار عن خدماتكم 🌿';
+    } else {
+      msg = 'مرحباً توت .كوم، أرغب في الاستفسار عن خدمة: ' + subject;
+    }
+    el.setAttribute('href', 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg));
+  });
+
+  /* ---------------------------------------------------------
+     2) الوضع الليلي/النهاري مع الحفظ في localStorage
+     --------------------------------------------------------- */
+  const root = document.documentElement;
+  const savedTheme = localStorage.getItem('tot-theme');
+  if (savedTheme) root.setAttribute('data-theme', savedTheme);
+
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('tot-theme', next);
+  });
+
+  /* ---------------------------------------------------------
+     3) القائمة المنسدلة للجوال (هامبرغر)
+     --------------------------------------------------------- */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  // إغلاق القائمة عند اختيار رابط
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ---------------------------------------------------------
+     4) تحديث مظهر الشريط عند التمرير (شريط شفاف → صلب)
+     --------------------------------------------------------- */
+  const navbar = document.getElementById('navbar');
+  const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 24);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------------------------------------------------------
+     5) الظهور التدريجي للأقسام عند التمرير (IntersectionObserver)
+        مع احترام تفضيل تقليل الحركة
+     --------------------------------------------------------- */
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealEls = document.querySelectorAll('.reveal');
+
+  if (prefersReduced || !('IntersectionObserver' in window)) {
+    revealEls.forEach(el => el.classList.add('visible'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => io.observe(el));
+
+    // شبكة أمان: إظهار أي عنصر داخل الشاشة تلقائياً لو تأخر المراقب
+    const safetyCheck = () => {
+      revealEls.forEach(el => {
+        if (el.classList.contains('visible')) return;
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('visible');
+          io.unobserve(el);
+        }
+      });
+    };
+    window.addEventListener('load', safetyCheck);
+    setTimeout(safetyCheck, 1200);
+  }
+
+  /* ---------------------------------------------------------
+     6) تمييز رابط القسم النشط في شريط التنقل
+     --------------------------------------------------------- */
+  const sections = document.querySelectorAll('main section[id]');
+  const navAnchors = document.querySelectorAll('.nav-links a, .mobile-menu a');
+
+  if ('IntersectionObserver' in window) {
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navAnchors.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(s => spy.observe(s));
+  }
+
+  /* ---------------------------------------------------------
+     7) فلترة مشاريع الأعمال حسب النوع
+     --------------------------------------------------------- */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project-card');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+
+      projects.forEach(card => {
+        const show = filter === 'all' || card.dataset.category === filter;
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+
+  /* ---------------------------------------------------------
+     8) نسخ رقم الجوال مع رسالة تأكيد
+     --------------------------------------------------------- */
+  const toast = document.getElementById('toast');
+  document.getElementById('copyPhone').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(PHONE_DISPLAY);
+      toast.textContent = 'تم نسخ الرقم ' + PHONE_DISPLAY + ' ✓';
+    } catch {
+      toast.textContent = 'الرقم: ' + PHONE_DISPLAY;
+    }
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2400);
+  });
+  </script>
+
+</body>
+</html>
